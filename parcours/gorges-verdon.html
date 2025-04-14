@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gapi - Gorges du Verdon</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .parcours-detail {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .parcours-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .parcours-header img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .parcours-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .info-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .info-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+        }
+
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .info-card li {
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .map-container {
+            margin: 2rem 0;
+            height: 400px;
+            background: #f5f5f5;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .important-info {
+            background: #fff3cd;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .important-info h3 {
+            color: #856404;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">GAPI</div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../randonnees.html">Randonnées</a></li>
+                <li><a href="../galerie.html">Galerie</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="parcours-detail">
+        <div class="parcours-header">
+            <img src="../images/verdon.jpg" alt="Gorges du Verdon">
+            <h1>Gorges du Verdon</h1>
+            <p>Un parcours spectaculaire dans les plus grandes gorges d'Europe</p>
+        </div>
+
+        <div class="parcours-info">
+            <div class="info-card">
+                <h3>Informations Pratiques</h3>
+                <ul>
+                    <li><i class="fas fa-clock"></i> Durée : 2-3 jours</li>
+                    <li><i class="fas fa-ruler"></i> Distance : 25 km</li>
+                    <li><i class="fas fa-mountain"></i> Dénivelé positif : 1,200 m</li>
+                    <li><i class="fas fa-flag"></i> Départ : La Palud-sur-Verdon</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>Niveau de Difficulté</h3>
+                <ul>
+                    <li><i class="fas fa-hiking"></i> Niveau : Moyen</li>
+                    <li><i class="fas fa-shoe-prints"></i> Marche : 4-6h/jour</li>
+                    <li><i class="fas fa-temperature-high"></i> Saison : Avril à Octobre</li>
+                    <li><i class="fas fa-bed"></i> Hébergement : Camping ou Hôtel</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.1234567890123!2d6.345678901234567!3d43.76543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDQ1JzU1LjYiTiA2wrAyMCc0NS4zIkU!5e0!3m2!1sfr!2sfr!4v1234567890123!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="important-info">
+            <h3>Informations Importantes</h3>
+            <ul>
+                <li>Prévoir suffisamment d'eau (points d'eau limités)</li>
+                <li>Chaussures de randonnée avec bonne adhérence obligatoires</li>
+                <li>Attention aux passages exposés et vertigineux</li>
+                <li>Réservation des hébergements conseillée en haute saison</li>
+                <li>Protection solaire indispensable</li>
+            </ul>
+        </div>
+
+        <div class="info-card">
+            <h3>Itinéraire Journalier</h3>
+            <ul>
+                <li>Jour 1 : La Palud-sur-Verdon - Point Sublime (8km)</li>
+                <li>Jour 2 : Point Sublime - Chalet de la Maline (10km)</li>
+                <li>Jour 3 : Chalet de la Maline - La Palud-sur-Verdon (7km)</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Gapi vous guide à travers les plus beaux chemins de randonnée.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: gapi.randonée@gmail.com</p>
+                <p>Tél: 07 85 45 78 85</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suivez-nous</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
